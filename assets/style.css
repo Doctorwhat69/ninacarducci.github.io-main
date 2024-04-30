@@ -115,6 +115,7 @@ body {
   display: block;
   padding-bottom: 100%;
 }
+
 .gallery-item {
   position: absolute;
   width: 100%;
@@ -167,7 +168,15 @@ body {
   left: 0;
   z-index: 0;
 }
+.picture img {
+  width: 100%;
+  height: 100%;
+}
 
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
 #services .container {
   justify-content: space-between;
   display: flex;
@@ -210,6 +219,7 @@ body {
 .form-container {
   flex: 2;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -316,6 +326,10 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
+  #header {
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+  }
   .top-header {
     flex-direction: column;
     padding-inline: 0;
