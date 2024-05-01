@@ -328,7 +328,6 @@ input[type="submit"] {
 @media all and (max-width: 650px) {
   #header {
     max-height: 100%;
-    aspect-ratio: 1 / 1;
   }
   .top-header {
     flex-direction: column;
