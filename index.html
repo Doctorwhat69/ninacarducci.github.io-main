@@ -14,6 +14,15 @@
       rel="preload"
       as="image"
       href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+      type="image/jpeg"
+      media="(min-width: 650px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_small.jpg"
+      type="image/jpeg"
+      media="(max-width: 649px)"
     />
     <meta charset="UTF-8" />
     <meta name="description" content="Obtenez des photos inégalables " />
@@ -85,55 +94,84 @@
               itemscope
               itemtype="https://schema.org/ImageObject"
             >
-              <img
-                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
-                srcset="
-                  assets\images\slider\ryoji-iwata-wUZjnOv7t0g-unsplash_small.jpg  500w,
-                  assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg       1900w
-                "
-                sizes="(max-width: 650px) 500px,
-                1900px"
-                class="d-block w-100"
-                alt="personne traversant un passage piéton"
-                loading="eager"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp
+                  "
+                  type="image/webp"
+                  sizes="(max-width: 650px) 500px, 1900px"
+                />
+                <source
+                  srcset="
+                    ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg
+                  "
+                  type="image/jpeg"
+                  sizes="(max-width: 650px) 500px, 1900px"
+                />
+                <img
+                  src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="personne traversant un passage piéton"
+                  loading="eager"
+                />
+              </picture>
             </div>
             <div
               class="carousel-item"
               itemscope
               itemtype="https://schema.org/ImageObject"
             >
-              <img
-                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
-                srcset="
-                  assets\images\slider\nicholas-green-nPz8akkUmDI-unsplash_small.jpg  500w,
-                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg     1900w
-                "
-                sizes="(max-width: 650px) 500px,
-                1900px"
-                class="d-block w-100"
-                alt="spectateurs profitant d'un concert"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp
+                  "
+                  type="image/webp"
+                  sizes="(max-width: 650px) 500px, 1900px"
+                />
+                <source
+                  srcset="
+                    ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg
+                  "
+                  type="image/jpeg"
+                  sizes="(max-width: 650px) 500px, 1900px"
+                />
+                <img
+                  src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="spectateurs profitant d'un concert"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <div
               class="carousel-item"
               itemscope
               itemtype="https://schema.org/ImageObject"
             >
-              <img
-                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
-                srcset="
-                  assets\images\slider\edward-cisneros-3_h6-1NPDGw-unsplash_small.jpg  500w,
-                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg     1900w
-                "
-                sizes="(max-width: 650px) 500px,
-                1900px
-                "
-                class="d-block w-100"
-                alt="deux mariés s'embrassent"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    assets\images\slider\edward-cisneros-3_h6-1NPDGw-unsplash.webp
+                  "
+                  type="image/webp"
+                  sizes="(max-width: 650px) 500px, 1900px"
+                />
+                <source
+                  srcset="
+                    assets\images\slider\edward-cisneros-3_h6-1NPDGw-unsplash.jpg
+                  "
+                  type="image/jpeg"
+                  sizes="(max-width: 650px) 500px, 1900px"
+                />
+                <img
+                  src="assets\images\slider\edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="spectateurs profitant d'un concert"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <button
