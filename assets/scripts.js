@@ -17,7 +17,7 @@ $(document).ready(function () {
     try {
       $(".gallery").mauGallery(galleryConfig);
     } catch (e) {
-      console.error("Failed to initialize the gallery:", e);
+      console.error("Echec de l'initialisation de la gallerie : ", e);
     }
   }
 });
