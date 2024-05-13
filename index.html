@@ -4,22 +4,20 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "about": {
-          "@type": "Person",
-          "name": "Nina Carducci"
-        },
+        "@type": "Person",
+        "name": "Nina Carducci",
         "jobTitle": "Photographe professionnelle",
         "url": "https://doctorwhat69.github.io/ninacarducci.github.io-main/",
-        "photo": "https://doctorwhat69.github.io/ninacarducci.github.io-main/assets/images/nina.png",
+        "image": "https://doctorwhat69.github.io/ninacarducci.github.io-main/assets/images/nina.png",
         "additionalType": "https://www.linkedin.com/in/ninacarducci",
         "description": "Nina Carducci est une photographe à Paris spécialisée dans les portraits, les événements et les paysages urbains.",
-        "telephone": "+33 1 23 45 67 89",
+        "telephone": "+33 5 56 67 78 89",
         "email": "info.ninacarducci@example.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "123 avenue des Champs Elysées",
-          "addressLocality": "Paris",
-          "postalCode": "75001",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
           "addressCountry": "FR"
         },
         "sameAs": [
@@ -57,6 +55,11 @@
       name="twitter:image"
       content="https://doctorwhat69.github.io/ninacarducci.github.io-main/assets/images/twitter-card-image.jpg"
     />
+    <meta
+      name="twitter:url"
+      content="https://doctorwhat69.github.io/ninacarducci.github.io-main/"
+    />
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -105,6 +108,7 @@
                 href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
                 target="_blank"
                 aria-label="Découvrez ma page Instagram"
+                itemprop="sameAs"
                 ><img
                   src="assets/images/instagram.png"
                   alt="logo d'Instagram"
@@ -305,7 +309,12 @@
     <div id="gallery">
       <h2 class="title">Portfolio</h2>
       <div class="container py-3">
-        <div class="gallery" style="display: none">
+        <div
+          class="gallery"
+          style="display: none"
+          itemscope
+          itemtype="https://schema.org/Photograph"
+        >
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
@@ -314,6 +323,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -323,6 +333,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -332,6 +343,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Mariages"
@@ -341,6 +353,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Portrait"
@@ -350,6 +363,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Mariages"
@@ -359,6 +373,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Portrait"
@@ -368,6 +383,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Concert"
@@ -377,6 +393,7 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
           <img
             data-gallery-tag="Entreprises"
@@ -386,7 +403,11 @@
             width="440"
             height="440"
             loading="lazy"
+            itemprop="image"
           />
+          <meta itemprop="author" content="Nina Carducci" />
+          <meta itemprop="contentLocation" content="Paris, France" />
+          <meta itemprop="datePublished" content="2023-05-05" />
         </div>
       </div>
       <div class="quote">
@@ -409,7 +430,7 @@
         <div class="service">
           <div class="service__description">
             <h2 itemprop="name">Shooting photo</h2>
-            <p>
+            <p itemprop="description">
               Pour capturer vos moments les plus précieux et garder un souvenir
               impérissable. Je me déplace en Île-de-France pour réaliser vos
               photos
@@ -423,7 +444,7 @@
         <div class="service">
           <div class="service__description">
             <h2 itemprop="name">Retouches</h2>
-            <p>
+            <p itemprop="description">
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
@@ -436,7 +457,7 @@
         <div class="service">
           <div class="service__description">
             <h2 itemprop="name">Album photos</h2>
-            <p>
+            <p itemprop="description">
               Partagez avec vos proches et vos clients les photos des moments
               partagés ensemble à travers un album photo personnalisé
             </p>
@@ -506,6 +527,22 @@
             />
           </picture>
         </div>
+      </div>
+      <div itemscope itemtype="http://schema.org/LocalBusiness">
+        <span itemprop="name">Nina Carducci</span>
+        <span itemprop="address"
+          >68 avenue Alsace-Lorraine, 33200 Bordeaux</span
+        >
+        <span itemprop="telephone">05 56 67 78 89</span>
+        <span
+          itemprop="openingHoursSpecification"
+          itemscope
+          itemtype="http://schema.org/OpeningHoursSpecification"
+        >
+          <meta itemprop="dayOfWeek" content="http://schema.org/Monday" />
+          <meta itemprop="opens" content="10:00" />
+          <meta itemprop="closes" content="19:00" />
+        </span>
       </div>
     </div>
   </body>
