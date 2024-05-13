@@ -18,6 +18,10 @@ body {
   align-items: center;
 }
 
+footer {
+  text-align: center;
+  margin: 20px;
+}
 .top-header .name {
   font-size: 26px;
 }
